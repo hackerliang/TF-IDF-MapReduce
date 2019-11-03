@@ -43,6 +43,3 @@ for k, v in word_dict:
             else:
                 list_dict[x] = [eval(i)[x]]
     print('%s\t%s' % (k, list_dict))
-
-#hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.2.0.jar -file mapper.py -mapper "python mapper.py" -file reducer.py -reducer "python reducer.py" -input /user/uic/py_wc_input/* -output /user/uic/py_wc_output/
-# hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.2.0.jar -D mapreduce.reduce.map.memory.mb=5120 -D mapreduce.reduce.memory.mb=5120 -file mapper.py -mapper "python mapper.py" -file reducer.py -reducer "python reducer.py" -input /user/uic/wc_big_files_input/* -output /user/uic/wc_big_files_output_py_mr/
