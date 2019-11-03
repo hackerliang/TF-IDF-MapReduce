@@ -47,15 +47,20 @@ hadoop jar /path/to/hadoop-streaming-*.jar \
 ```
 
 ### TF-IDF
+#### MapReduce1
 >\<key\> \<value\>
 >>Mapper1: \<word, document_name\> \<1\>
 
 >>Reducer1: \<word, document_name\> \<word_appears_time_in_same_document\>
 
+#### MapReduce2
+>\<key\> \<value\>
 >>Mapper2: \<document_name\> \<word, word_appears_time_in_same_document\>
 
 >>Reducer2: \<word, document_name\> \<word_appears_time_in_same_document, total_words_in_this_document\>
 
+#### MapReduce3
+>\<key\> \<value\>
 >>Mapper3: \<word\> \<document_name, word_appears_time_in_same_document, total_words_in_this_document, 1\>
 
 >>Reducer3: \<word, document_name\> \<TF-IDF\>
