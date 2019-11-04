@@ -32,7 +32,7 @@ hadoop jar /path/to/hadoop-streaming-*.jar \
 
 ### LineNumber
 #### Warning
- - By Default mapreduce program will spilt files by **mapred.min.split.size**, the default value is **file.blocksize**=64MiB. If a file is larger than **mapred.min.split.size**, then the solution to this problem is invalid.
+ - By Default mapreduce program will split files by **mapred.min.split.size**, the default value is **file.blocksize**=64MiB. If a file is larger than **mapred.min.split.size**, then the solution to this problem is invalid.
 
 >\<key\> \<value\>
 >> Mapper: \<word, document_name\> \<line_number\>
