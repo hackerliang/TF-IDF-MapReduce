@@ -33,7 +33,7 @@ hadoop jar /path/to/hadoop-streaming-*.jar \
 >\<key\> \<value\>
 >> Mapper: \<word, document_name\> \<line_number\>
 
->> Reducer: \<word, document_name\> \<[line_number]\>
+>> Reducer: \<word\> \<document_name, [line_number]\>
 ```shell
 hadoop jar /path/to/hadoop-streaming-*.jar \
 -D mapreduce.reduce.map.memory.mb=5120 \
