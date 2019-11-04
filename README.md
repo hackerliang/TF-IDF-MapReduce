@@ -7,6 +7,7 @@ A python mapreduce script to count TF-IDF base on hadoop mapreduce
 ## Table of contents
 * [WordCount](#WordCount)
 * [LineNumber](#LineNumber)
+    * Warning
 * [TF-IDF](#TF-IDF)
     * MapReduce1
     * MapReduce2
@@ -30,6 +31,9 @@ hadoop jar /path/to/hadoop-streaming-*.jar \
 ```
 
 ### LineNumber
+#### Warning
+ - By Default mapreduce program will spilt files by **mapred.min.split.size**, the default value is **file.blocksize**=64MiB. If a file is larger than **mapred.min.split.size**, then the solution to this problem is invalid.
+
 >\<key\> \<value\>
 >> Mapper: \<word, document_name\> \<line_number\>
 
