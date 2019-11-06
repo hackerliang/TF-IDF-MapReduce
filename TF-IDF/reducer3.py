@@ -14,8 +14,8 @@
 
 # ##
 # hadoop jar /path/to/hadoop-streaming-*.jar -D mapreduce.reduce.map.memory.mb=5120
-# -D mapreduce.reduce.memory.mb=5120 -D mapreduce.job.reduces=24 -file mapper2.py -mapper "python mapper2.py"
-# -file reducer2.py -reducer "python3 reducer2.py" -input /path/to/tf-idf_step1/output_dir
+# -D mapreduce.reduce.memory.mb=5120 -D mapreduce.job.reduces=24 -file mapper3.py -mapper "python mapper3.py"
+# -file reducer3.py -reducer "python3 reducer3.py" -input /path/to/tf-idf_step1/output_dir
 # -output /path/to/tf-idf_step3/output_dir
 # ##
 
