@@ -6,7 +6,7 @@
 
 # <key>\t<value>
 # # Mapper: <word, document_name>\t<line_number>
-# Reducer: <word, document_name>\t<[line_number]>
+# Reducer: <word>\t<document_name, [line_number]>
 
 import os
 import re
